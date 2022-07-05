@@ -131,14 +131,15 @@ func init() {
 		"Talon Knife":     CSWeapon_KNIFE_WIDOWMAKER,
 		"Ursus Knife":     CSWeapon_KNIFE_URSUS,
 		// Pistols
-		"Desert Eagle":  CSWeapon_DEAGLE,
-		"R8 Revolver":   CSWeapon_REVOLVER,
-		"Glock-18":      CSWeapon_GLOCK,
-		"USP-S":         CSWeapon_USP,
+		"Desert Eagle": CSWeapon_DEAGLE,
+		"R8 Revolver":  CSWeapon_REVOLVER,
+		"Glock-18":     CSWeapon_GLOCK,
+		//"USP-S":         CSWeapon_USP, CORREGIR
+		"USP-S":         CSWeapon_USP_SILENCER,
 		"Five-SeveN":    CSWeapon_FIVESEVEN,
 		"Tec-9":         CSWeapon_TEC9,
 		"p250":          CSWeapon_P250,
-		"CZ75-Auto":     CSWeapon_CZ75A,
+		"CZ75 Auto":     CSWeapon_CZ75A,
 		"Dual Berettas": CSWeapon_ELITE,
 		"P2000":         CSWeapon_HKP2000,
 		// Shotguns

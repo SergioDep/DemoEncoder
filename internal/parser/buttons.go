@@ -36,6 +36,10 @@ const (
 
 func ButtonConvert(player *common.Player, addonButton int32) int32 {
 	var button int32 = addonButton
+	// 	Fully ducked: Ducking() && DuckingKeyPressed()
+	// 	Previously fully ducked, unducking in progress: Ducking() && !DuckingKeyPressed()
+	// 	Fully unducked: !Ducking() && !DuckingKeyPressed()
+	// 	Previously fully unducked, ducking in progress: !Ducking() && DuckingKeyPressed()
 	if player.Flags().DuckingKeyPressed() {
 		button |= IN_DUCK
 	}
@@ -44,6 +48,12 @@ func ButtonConvert(player *common.Player, addonButton int32) int32 {
 	}
 	if player.IsReloading {
 		button |= IN_RELOAD
+	}
+	if player.IsPlanting {
+		button |= IN_USE
+	}
+	if player.IsDefusing {
+		button |= IN_USE
 	}
 	return button
 }
